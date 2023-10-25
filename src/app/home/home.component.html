@@ -1,0 +1,49 @@
+<body>
+<div class="text-center">
+    <img
+      style="background-image: none"
+      src="https://cdn.makitatools.com/apps/wms/pressreleases/userfiles/image/original/Makita_GEC01PL_Action_Shot_(cutting_CMU).jpg"
+      alt="Card image cap"
+      width="100%"
+      height="400"
+    />
+    <br>
+    <div class="flex-row center-both" style="margin-top: 10px;">
+      <button
+        mat-raised-button
+        (click)="setActiveTab('wholesaler')"
+        [ngClass]="{
+          center: true,
+          'active-tab': activeTab === 'wholesaler',
+          'inactive-tab': activeTab !== 'wholesaler'
+        }"
+        class="my-button"
+        style="margin-right: 10px;"
+      >
+        Wholesaler
+      </button>
+      
+      <button
+        mat-raised-button
+        (click)="setActiveTab('retailer')"
+        [ngClass]="{
+          center: true,
+          'active-tab': activeTab === 'retailer',
+          'inactive-tab': activeTab !== 'retailer'
+        }"
+        class="my-button"
+        style="margin-left: 10px;"
+      >
+        Retailer
+      </button>
+    </div>
+
+</div>
+<div style="display: flex;">
+    <h1 style="padding: 10px;color: rgb(88, 88, 88);">Categories</h1>
+    <!-- <p style="padding: 10px;color: rgb(88, 88, 88);gap: 5px;">View all</p> -->
+</div>
+<div style="padding: 10px;color: rgb(88, 88, 88);">
+    <h1>Stores</h1>
+</div>
+</body>

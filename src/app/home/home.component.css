@@ -37,4 +37,8 @@
     background-color: gray; /* Background color when inactive */
     color: white;
   }
-  
+body {
+    background-color: rgb(212, 211, 211);
+    margin: 0;
+    padding: 0;
+  }
