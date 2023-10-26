@@ -1,0 +1,17 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+.nav-button {
+  color: gray;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 12px;
+}
+.example-full-width {
+    width: 200px;
+  }
+  
+  .mat-toolbar {
+    display: flex;
+    justify-content: space-between;
+  }

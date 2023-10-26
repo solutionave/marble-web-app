@@ -9,14 +9,19 @@ import { MatButtonModule } from '@angular/material/button';
 import { HomeComponent } from './home/home.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { RetailerComponent } from './retailer/retailer.component';
 import { WholesalerComponent } from './wholesaler/wholesaler.component';
+import { NavbarComponent } from './component/navbar/navbar.component';
+import { MatSelectModule } from '@angular/material/select';
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     RetailerComponent,
-    WholesalerComponent
+    WholesalerComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +30,9 @@ import { WholesalerComponent } from './wholesaler/wholesaler.component';
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
-    MatMenuModule
+    MatMenuModule,
+    MatFormFieldModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

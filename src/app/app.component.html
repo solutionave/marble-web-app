@@ -1,4 +1,4 @@
-<mat-toolbar color="warn">
+<!-- <mat-toolbar color="warn">
   <div class="flex items-center">
     <img src="../assets/images/quarry.png" style="width: 70px; height: 70px" />
   </div>
@@ -8,19 +8,20 @@
   <button mat-button routerLink="/about">Products</button>
   <button mat-button routerLink="/about">Stores</button>
   <button mat-icon-button [matMenuTriggerFor]="profileMenu">
-    <!-- Added mat-icon-button and matMenuTriggerFor -->
+    
     <mat-icon>account_circle</mat-icon>
-    <!-- An example profile icon (change it to your desired icon) -->
   </button>
   <mat-menu #profileMenu="matMenu">
-    <!-- Defined the mat-menu with a template reference variable -->
+   
     <button mat-menu-item>Account</button>
-    <!-- An example menu item (replace it with your menu options) -->
+   
     <button mat-menu-item>Logout</button>
-    <!-- An example menu item (replace it with your menu options) -->
+   
   </mat-menu>
-</mat-toolbar>
+</mat-toolbar> -->
+
+<app-navbar></app-navbar>
 
 
-  <router-outlet></router-outlet>
+  <!-- <router-outlet></router-outlet> -->
 

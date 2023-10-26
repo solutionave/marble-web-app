@@ -1,0 +1,48 @@
+<mat-toolbar style="height: 5%;">
+    <p>Download our App here</p>
+    <span class="example-spacer"></span>
+    <button mat-button routerLink="/home" class="nav-button">Home</button>
+    <button mat-button routerLink="/home" class="nav-button">Contact Us</button>
+    <button mat-button routerLink="/home" class="nav-button">About Us</button>
+</mat-toolbar>
+
+<mat-toolbar style="background-color: white;">
+    <div class="flex items-center">
+      <img src="../assets/images/quarry.png" style="width: 70px; height: 70px" />
+    </div>
+    <span class="example-spacer"></span>
+   
+    <div style="border: 2px solid black; border-radius: 30px; padding: 10px;margin-right: 20px;">
+        <mat-icon style="width: 40px;">message</mat-icon>
+        <mat-icon style="width: 40px;">shopping_bag</mat-icon>
+        <mat-icon style="width: 40px;">alarm</mat-icon>
+        <mat-icon >library_music</mat-icon>
+      </div>
+    <button mat-icon-button [matMenuTriggerFor]="profileMenu" style="margin-right: 60px;">
+      <mat-icon>account_circle</mat-icon>
+      <span style="font-size: large;;">Profile</span>
+    </button>
+    <mat-menu #profileMenu="matMenu">
+      <button mat-menu-item>Account</button>
+      <button mat-menu-item>Logout</button>
+    </mat-menu>
+    <button mat-fab extended color="black" style="color: white;background-color: black;margin-right: 40px;">
+        Become Merchant
+      </button>
+  </mat-toolbar>
+  
+  <mat-toolbar color="warn">
+    <!-- <mat-icon>search</mat-icon>
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Search">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-select placeholder="Category">
+      <mat-option value="all">All</mat-option>
+      <mat-option value="category1">Category 1</mat-option>
+      <mat-option value="category2">Category 2</mat-option>
+      
+    </mat-select>
+  </mat-form-field> -->
+  </mat-toolbar>
